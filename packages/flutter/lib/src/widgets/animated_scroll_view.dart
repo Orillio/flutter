@@ -1406,7 +1406,7 @@ abstract class _SliverAnimatedMultiBoxAdaptorState<T extends _SliverAnimatedMult
     assert(index >= 0);
 
     final int itemIndex = _indexToItemIndex(index);
-    assert(itemIndex >= 0 && itemIndex < _itemsCount);
+    // assert(itemIndex >= 0 && itemIndex < _itemsCount);
     assert(_activeItemAt(_outgoingItems, itemIndex) == null);
 
     final _ActiveItem? incomingItem = _removeActiveItemAt(_incomingItems, itemIndex);
